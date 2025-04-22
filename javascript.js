@@ -101,7 +101,7 @@ Prøv å endre verdiene på variablene for å sikre at IF/ELSE-setningen din
 håndterer alle tilfeller korrekt.
 ******************************************************************************/
 
-let userName = "Tom";
+let userName = "";
 let userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
@@ -142,3 +142,7 @@ at betingelsen din fungerer som den skal.
 const userMale = false;
 
 // Skriv koden for oppgave 5 her
+
+let userTitle = "userMale";
+
+userMale === false ? console.log("Mrs.") : console.log("Mr.");

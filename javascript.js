@@ -54,6 +54,32 @@ Skriv noen eksempler der du tester disse operatorene.
 
 // Skriv koden for oppgave 3 her
 
+let x = 10;
+let y = 5;
+let z = 3;
+
+console.log((x + y) / z);
+
+console.log((x - z) * y);
+
+console.log(x % z);
+
+console.log((x += z));
+
+console.log((x -= z));
+
+console.log(++y);
+
+console.log(--y);
+
+console.log((x /= y));
+
+console.log((x *= y));
+
+console.log((x **= z));
+
+console.log(Math.round(Math.pow(x, 1 / z)));
+
 /******************************************************************************
 OPPGAVE 4
 
@@ -75,13 +101,28 @@ Prøv å endre verdiene på variablene for å sikre at IF/ELSE-setningen din
 håndterer alle tilfeller korrekt.
 ******************************************************************************/
 
-let userName = "";
+let userName = "Tom";
 let userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
 
 // Skriv koden for oppgave 4 her
+
+if (userName != "" && userAge >= 18) {
+  if (userIsBlocked === false) {
+    userIsLoggedIn = true;
+    console.log("Welcome User");
+    goToPage = "/home";
+  } else {
+    console.log("Error 404: This user has been blocked. BeeGone!");
+    goToPage = "/gone";
+  }
+} else {
+  console.log("Error 104: This user does not exist");
+  goToPage = "/return";
+}
+console.log(goToPage);
 
 /******************************************************************************
 OPPGAVE 5
